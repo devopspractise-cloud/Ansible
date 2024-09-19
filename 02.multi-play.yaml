@@ -10,6 +10,3 @@
   - name : PLAY BOOK01 to run
     ansible.builtin.debug:
  
-
-
-- name:
