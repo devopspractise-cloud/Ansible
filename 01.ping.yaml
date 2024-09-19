@@ -1,0 +1,5 @@
+- name: ping the server
+  hosts: # which hosts ansible will run
+  tasks: # which tasks  modules need to perfrom
+  - name : ping the server 
+    ansible.builtin.ping:
