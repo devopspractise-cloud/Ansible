@@ -10,7 +10,7 @@
   - name: print the number less than 10
     ansible.builtin.debug:
      msg: "print  the{{my_number}}  less than 10"
-    when: number  | int <10
+    when: mynumber  | int <10
 
 
   - name: print the number grater than 10
