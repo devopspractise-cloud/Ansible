@@ -2,13 +2,13 @@
   hosts: web
   become: true
   tasks: 
-  - name: install httpd and run
+  - name: install httpd
     ansible.builtin.package:
       name: httpd
-      state: installed
+      state: latest
 
   - name: apace service to run
     ansible.builtin.service:
       name: httpd
-      state: reloaded
-      enabled: yes
+      state: started
+      enabled: true
