@@ -7,4 +7,4 @@
   tasks:
   - name: print the message
     ansible.builtin.debug:
-      mess: "COURSE {{Course}}, DURATION{{Duration}}, LEARNER{{Learner}}"
+      mes: "COURSE {{Course}}, DURATION  is :{{Duration}}, LEARNER is :{{Learner}}"
