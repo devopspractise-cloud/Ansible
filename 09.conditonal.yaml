@@ -2,7 +2,7 @@
   hosts: local
   connection: localhost
   vars_promt:
-  - name: "number"
+  - name: number
     prompt: enter the number
 
 
