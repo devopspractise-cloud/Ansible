@@ -8,4 +8,4 @@
   - name: print the message
     ansible.builtin.debug:
     # meg: "COURSE {{Course}}, DURATION  is :{{Duration}}, LEARNER is :{{Learner}}"
-      meg: COURSE is{{Course}}   DURATION  is{{Duration}}  LEARNER is :{{learner}}
+      meg: COURSE is{{Course}}, DURATION  is{{Duration}},  LEARNER is :{{Learner}}
