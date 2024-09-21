@@ -5,7 +5,7 @@
   - name: install httpd and run
     ansible.builtin.package:
       name: httpd
-      state: started
+      state: installed
 
   - name: apace service to run
     ansible.builtin.service:
