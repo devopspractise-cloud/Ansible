@@ -1,9 +1,9 @@
 - name : check the conditional
   hosts: local
-  connection: local
+  connection: localhost
   vars_promt:
    - name : "number"
-     prompt :"enter the number"
+     prompt: "enter the number"
 
 
   tasks:
