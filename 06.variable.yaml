@@ -11,13 +11,13 @@
 
 
      
-  - name: print the message # task level variable
-    vars:
-      Course: "Ansible"
-    ansible.builtin.debug:
-      msg: "COURSE is {{Course}}, DURATION  is{{Duration}},  LEARNER is :{{Learner}}"
+  # - name: print the message # task level variable
+  #   vars:
+  #     Course: "Ansible"
+  #   ansible.builtin.debug:
+  #     msg: "COURSE is {{Course}}, DURATION  is{{Duration}},  LEARNER is :{{Learner}}"
 
 
-  - name: print the message # play level variable
-    ansible.builtin.debug:
-      msg: "COURSE is {{Course}}, DURATION  is{{Duration}},  LEARNER is :{{Learner}}"
+  # - name: print the message # play level variable
+  #   ansible.builtin.debug:
+  #     msg: "COURSE is {{Course}}, DURATION  is{{Duration}},  LEARNER is :{{Learner}}"
