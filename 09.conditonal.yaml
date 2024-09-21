@@ -1,6 +1,6 @@
 - name : check the conditional
   hosts: local
-  connection: localhost
+  connection: local
   vars_prompt:
   - name: number
     prompt: enter the number
