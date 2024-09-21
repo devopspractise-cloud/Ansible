@@ -10,5 +10,5 @@
   - name: apace service to run
     ansible.builtin.service:
       name: httpd
-      state: started
+      state: reloaded
       enabled: yes
