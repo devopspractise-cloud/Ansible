@@ -3,8 +3,8 @@
   vars:
     Course: "Devops with AWS"
     Duration: "120HRS"
-    Learner: " Hari"
+    Learner: "Hari"
   tasks:
   - name: print the message
     ansible.builtin.debug:
-      mes : " COURSE {{Course}},Duration{{120HRS}},Leaner{{Hari}}"
+      mes : "COURSE {{Course}},DURATION{{Duration}},LEARNER{{Learner}}"
