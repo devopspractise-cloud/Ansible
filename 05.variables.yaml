@@ -7,4 +7,5 @@
   tasks:
   - name: print the message
     ansible.builtin.debug:
-     meg: "COURSE {{Course}}, DURATION  is :{{Duration}}, LEARNER is :{{Learner}}"
+    #  meg: "COURSE {{Course}}, DURATION  is :{{Duration}}, LEARNER is :{{Learner}}"
+      meg: "COURSE is Devops with AWS , DURATION  is :120HRS, LEARNER is :Hari"
