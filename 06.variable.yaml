@@ -4,7 +4,20 @@
     Course: "Devops with AWS"
     Duration: "120HRS"
     Learner: "Hari"
-  tasks:
+  tasks:   # play level variables
   - name: print the message
+    ansible.builtin.debug:
+      msg: "COURSE is {{Course}}, DURATION  is{{Duration}},  LEARNER is :{{Learner}}"
+
+
+     
+  - name: print the message # task level variable
+    vars:
+      Course: "Ansible"
+    ansible.builtin.debug:
+      msg: "COURSE is {{Course}}, DURATION  is{{Duration}},  LEARNER is :{{Learner}}"
+
+
+  - name: print the message # play level variable
     ansible.builtin.debug:
       msg: "COURSE is {{Course}}, DURATION  is{{Duration}},  LEARNER is :{{Learner}}"
