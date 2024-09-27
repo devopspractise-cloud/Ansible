@@ -4,12 +4,12 @@
   vars_prompt:
   - name: number
     prompt: enter the number
-    private: false
+   # private: false
 
   tasks:
   - name: print the number less than 10
     ansible.builtin.debug:
-      msg: " hi number {{number}} is less than 10"
+      msg: "hi number {{number}} is less than 10"
     when: number | int < 10
 
   - name: print the number greather than 10
