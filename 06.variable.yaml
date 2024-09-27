@@ -10,7 +10,7 @@
       msg: "COURSE is {{Course}}, DURATION  is{{Duration}},  LEARNER is :{{Learner}}"
 
 
-     
+    
   # - name: print the message # task level variable
   #   vars:
   #     Course: "Ansible"
