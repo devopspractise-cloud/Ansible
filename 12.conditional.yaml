@@ -1,6 +1,6 @@
 - name: to check the number is less that 10
   hosts: local
-  connections: local
+  connection: local
   vars_prompt:
   - name: number
     prompt: enter the number
