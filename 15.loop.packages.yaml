@@ -2,9 +2,9 @@
   hosts: local
   connection: local
   tasks:
-  - name : Packages to install
+  - name: Packages to install
     ansible.builtin.package:
-      msg: " the packages are :{{items}}"
+      msg: "the packages are :{{items}}" # default key for loops
 
     loop:
     - ngnix
