@@ -1,6 +1,7 @@
 - name: loop demo
   hosts: web
-  tasks:
+  connection: local
+  tasks: 
   - name: the loop to print
     ansible.builtin.debug:
      msg: " Hello {{item}}"
