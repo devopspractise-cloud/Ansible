@@ -1,0 +1,13 @@
+- name: the loop packages to install
+  hosts: local
+  connection: local
+  tasks:
+  - name : Packages to install
+    ansible.builtin.package:
+      msg: " the packages are :{{items}}"
+
+    loop:
+    - ngnix
+    - mysql
+    - httpd
+    - apache2

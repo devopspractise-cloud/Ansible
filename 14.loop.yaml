@@ -4,7 +4,7 @@
   tasks: 
   - name: the loop to print
     ansible.builtin.debug:
-     msg: " Hello {{item}}"
+     msg: " Hello {{item}}"  # ansible_default key to values in loop
     loop:
     - Ramesh
     - Raju

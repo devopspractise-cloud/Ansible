@@ -4,14 +4,14 @@
   tasks:
   - name: install ngnix
     ansible.builtin.debug:
-      msg: "{{ansible_facts}}"
+      msg: "{{ansible_facts}}" # its a reserve keyboard for getting facts
   
 
   - name: ngnix OS redhat to be installed
     ansible.builtin.dnf:
       name: nginx
       state: present
-    when: ansible_os_family=="RedHat"
+    when: ansible_os_family=="RedHat"   # its is OS family to add
 
 
   - name: ngnix OS Debian to be installed
