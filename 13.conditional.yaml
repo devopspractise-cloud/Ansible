@@ -4,14 +4,14 @@
   tasks:
   - name: install ngnix
     ansible.builtin.debug:
-      msg: "nginx is to installed"
+      msg: "{{ansible_facts}}"
   
 
   - name: ngnix OS redhat to be installed
     ansible.builtin.dnf:
       name: nginx
       state: present
-    when: ansible_os_family=="Redhat"
+    when: ansible_os_family=="RedHat"
 
 
   - name: ngnix OS redhat to be installed
