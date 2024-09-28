@@ -5,7 +5,7 @@
   tasks:
   - name: Packages to install
     ansible.builtin.package:
-      name: "{{item}}"
+      name: "{{item}}"   # iteam is reserve ward for using for loop
       state: present
 
     loop:
