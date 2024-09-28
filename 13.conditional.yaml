@@ -14,7 +14,7 @@
     when: ansible_os_family=="RedHat"
 
 
-  - name: ngnix OS redhat to be installed
+  - name: ngnix OS Debian to be installed
     ansible.builtin.apt:
       name: nginx
       state: present
