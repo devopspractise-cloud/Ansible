@@ -1,0 +1,24 @@
+- name: to instal nginx
+  hosts: web
+  become: yes
+  tasks:
+  - name:  install ngnix
+    ansiblie.builtin.debug:
+      msg: "nginx is to installed"
+  
+
+  - name: ngnix OS redhat to be installed
+    ansible.builtin.dnf:
+      name: nginx
+      state: present
+    when: ansible_os_family=="Redhat"
+
+
+  - name: ngnix OS redhat to be installed
+    ansible.builtin.apt:
+      name: nginx
+      state: present
+    when: ansible_os_family=="Debian"
+
+
+  
