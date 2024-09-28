@@ -7,7 +7,6 @@
     ansible.builtin.package:
       name: "{{item}}""
       state: present
-      #{{item}}" # default key for loops
 
     loop:
     - ngnix
