@@ -1,5 +1,5 @@
 - name: the package to install and uninstall via loop
-  hosts: web
+  hosts: local
   connection: local
 
   tasks:
