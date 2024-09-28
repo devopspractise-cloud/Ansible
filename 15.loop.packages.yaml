@@ -9,7 +9,7 @@
       state: present
 
     loop:
-    - ngnix
+    - nginx
     - mysql
     - httpd
     - apache2
