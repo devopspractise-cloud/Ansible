@@ -3,7 +3,7 @@
   become: yes
   tasks:
   - name: install ngnix
-    ansiblie.builtin.debug:
+    ansible.builtin.debug:
       msg: "nginx is to installed"
   
 
