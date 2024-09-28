@@ -5,7 +5,9 @@
   tasks:
   - name: Packages to install
     ansible.builtin.package:
-      msg: "the packages are :{{item}}" # default key for loops
+      name: {{item}}
+      state: present
+      #{{item}}" # default key for loops
 
     loop:
     - ngnix
