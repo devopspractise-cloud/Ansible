@@ -5,10 +5,11 @@
   tasks:
   - name: Packages to install
     ansible.builtin.package:
-      name: "{{item}}""
+      name: "{{item}}"
       state: present
 
     loop:
     - ngnix
     - mysql
     - httpd
+    - apache2
